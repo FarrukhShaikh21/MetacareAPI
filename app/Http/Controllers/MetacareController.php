@@ -29,7 +29,7 @@ Where j.JobCardno = '$p_jobcardno'");
             'JobcardStatus' => 'Jobcard doesnot exist.'
         ], 404);
     }
-    else
+    else //else show all data
     {
     return response()->json($data);
     }
